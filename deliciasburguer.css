@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu{
+width: 100%;
+  display: flex;
+}
+.cardapio-0{
+  margin: 1rem;
+  background-color: pink;
+  cursor: pointer;
+}
+/*pizza*/
+.cardapio-pizza{
+  width: 100%;
+  height: 100vw;
+  background-color: rgb(253, 231, 234);
+  display: none;
+}
+/*cachorro quente*/
+.cardapio-Quente{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 231, 234);
+  display: none;
+}
+/*cardapio-sanduíches*/
+.cardapio-sanduíches{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 231, 234);
+  display: none;
+}
+/*******cardapio-drink*/
+.cardapio-drink{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 231, 234);
+  display: none;
+}
+/**cardapio-açaiecreme***/
+.cardapio-açaiecreme{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 231, 234);
+  display: none;
+}
+/**cardapio-pateis*/
+.cardapio-pateis{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 231, 234);
+  display: none;
+}
+.buycardapio-descriçao{
+  margin-top: 300px;
+  width: 100%;
+  height: 20px ;
+  background-color: bisque;
+}
+/*pizza-img**/
+.pizza-img{
+  width: 150px;
+  height: 150px;
+}
+.pizza-img img{
+  background-size: cover;
+object-fit: cover;
+width: 150px ;
+height: 150px;
+}
