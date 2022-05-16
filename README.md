@@ -1,2 +1,3 @@
 # deleciaburguer
-I have a problem I can't create one to leave a description after the name. this description has an array inside this array we have several objects I want to get each description and create a div to put in the html below the name
+
+I have a little problem I made a loop on line 79 to access the description of the array to insert on the screen but the loop is not working!

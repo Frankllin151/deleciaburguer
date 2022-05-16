@@ -74,16 +74,30 @@ let description = pizzaaopen.map(e => e.description)
 let getname = names
 let txt = ''
 let texto = ''
-getname.forEach(namegt)
-description.forEach(item => {
-  texto += `${item}`
-})
-console.log(texto)
-function namegt(item, texto) {
-  txt += ' ' + `<div class="pizza-name">${item} <div>${texto}</div></div>`
+for (let index = 0; index < description.length; ++index) {
+  var element = description[index]
+  console.log(element)
+  texto = element
 }
+getname.forEach(namegt) /
+  /**description.forEach(desc)
+function desc(item) {
+  texto += ' ' + `<div class="pizza-desc">${item}</div>`
+}*/ console.log(texto)
+function namegt(item) {
+  txt +=
+    ' ' +
+    `<div class="pizza-name">${item} <p id="pdescription">${element}</p></div>`
+}
+/*
+const a = ["a", "b", "c"];
+for (let index = 0; index < a.length; ++index) {
+    const element = a[index];
+    console.log(element);
+}
+*/
 get('.pizza-item').innerHTML = txt
-/*get('.main').innerHTML = destxt*/
+
 //************
 // Cachorro Quente enviroment
 let namesQ = CachorroQ.map(e => e.name)
