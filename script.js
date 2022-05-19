@@ -19,7 +19,7 @@ let acaiecreme = menu[3].acaiecremes
 
 // functions
 function pizzaopen() {
-  get('.cardapio-pizza').style.display = 'flex'
+  let flexopen = (get('.cardapio-pizza').style.display = 'flex')
   get('.cardapio-Quente').style.display = 'none'
   get('.cardapio-sanduíches').style.display = 'none'
   get('.cardapio-açaiecreme').style.display = 'none'
@@ -71,22 +71,32 @@ function cremeacai() {
 // pizza enviroment
 let names = pizzaaopen.map(e => e.name)
 let description = pizzaaopen.map(e => e.description)
-let photo = pizzaaopen.map(e => e.src)
-// for loop of names, description and photo
+let getname = names
+let txt = ''
+let texto = ''
 for (let index = 0; index < description.length; ++index) {
-  let element = description[index]
-  let nameT = ''
-  let areapictures = ''
-  for (let index = 0; index < names.length; ++index) {}
-  for (let index = 0; index < photo.length; ++index) {}
-  areapictures = photo[index]
-  nameT = names[index]
-  get('.pizza-item').innerHTML += `<div class="pizza-area">
-  <img class="photos" src="${areapictures}" alt="">
-  <div class="namep">${nameT}</div>
-  <p class="description"> ${element}</p>
-  </div>`
+  var element = description[index]
+  console.log(element)
+  texto = element
 }
+getname.forEach(namegt) /
+  /**description.forEach(desc)
+function desc(item) {
+  texto += ' ' + `<div class="pizza-desc">${item}</div>`
+}*/ console.log(texto)
+function namegt(item) {
+  txt +=
+    ' ' +
+    `<div class="pizza-name">${item} <p id="pdescription">${element}</p></div>`
+}
+/*
+const a = ["a", "b", "c"];
+for (let index = 0; index < a.length; ++index) {
+    const element = a[index];
+    console.log(element);
+}
+*/
+get('.pizza-item').innerHTML = txt
 
 //************
 // Cachorro Quente enviroment
