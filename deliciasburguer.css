@@ -18,6 +18,20 @@ width: 100%;
   height: 100vw;
   background-color: rgb(253, 231, 234);
   display: none;
+  flex-direction: column;
+}
+.pizza-item{
+  display: flex;
+  flex-direction: row;
+}
+.photos{
+  width: 30px;
+  height: 30px;
+}
+.photos img {
+  background-size: cover;
+  width: 30px;
+  height: 30px;
 }
 /*cachorro quente*/
 .cardapio-Quente{
@@ -61,13 +75,4 @@ width: 100%;
   background-color: bisque;
 }
 /*pizza-img**/
-.pizza-img{
-  width: 150px;
-  height: 150px;
-}
-.pizza-img img{
-  background-size: cover;
-object-fit: cover;
-width: 150px ;
-height: 150px;
-}
+
