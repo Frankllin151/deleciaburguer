@@ -1,3 +1,3 @@
 # deleciaburguer
 
-I have a little problem I made a loop on line 79 to access the description of the array to insert on the screen but the loop is not working!
+Solved the loop problem, I put a loop and two inside it, 1 for the description and another for the title!
