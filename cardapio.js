@@ -151,73 +151,83 @@ let cardapios = [
     Sanduiches: [
       {
         id: 1,
-        name: 'Bauru Esopecial',
+        name: 'Bauru Especial',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé, Molho Cheddar, Queijo e Apresuntado',
-        price: 7.0
+        price: 7.0,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 2,
         name: 'X-burguer',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé. Molho Cheddar, Queijo, Apresuntado E Salsicha',
-        price: 7.5
+        price: 7.5,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 3,
         name: 'X-dog',
         description:
           'Pão, Alface, Tomate, Ovd, Salsicha, Molho Rosé, Milho Cheddar, Queijo E Apresuntado',
-        price: 6.5
+        price: 6.5,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 4,
         name: 'X-frango',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Frango Com Catupiry',
-        price: 8.0
+        price: 8.0,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 5,
         name: 'X-carne',
         description:
           'Pão, Alface, Tomate, Ovd, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Carne De Sol',
-        price: 8.5
+        price: 8.5,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 6,
         name: 'X-calabresa',
         description:
           'Pão, Alface, Tomate, Ovd, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Calabresa',
-        price: 8.0
+        price: 8.0,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 7,
         name: 'X-bacon',
         description:
           'Pão, Alface, Tomate, Ovd, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Bacon',
-        price: 8.0
+        price: 8.0,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 8,
         name: 'X-tudo',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado, Frango C/ Catupiry.Calabresa E Bacon',
-        price: 10.0
+        price: 10.0,
+        img: './images/bigburguer.jfif'
       },
       ,
       {
         id: 9,
         name: 'X-salada',
         description: 'Pao, Alface, Tomate, E Frango',
-        price: 6.5
+        price: 6.5,
+        img: './images/bigburguer.jfif'
       },
       {
         id: 10,
         name: 'X-tudão',
         description:
           'Pão, Alface, Tomate, 2 Ovos, 2 Hamburgueres, Molho Rosé,Molho Cheddar, Queijo, Apresuntado, Bacon, Frango, Calabresa E Salsicha',
-        price: 12.0
+        price: 12.0,
+        img: './images/bigburguer.jfif'
       }
     ]
   },
@@ -226,66 +236,77 @@ let cardapios = [
       {
         id: 1,
         name: 'Queijo',
-        price: 5.0
+        price: 5.0,
+        img: './images/pastel.webp'
       },
       {
         id: 2,
         name: 'Misto',
         description: 'Queijo, Apresuntado E Oregano',
-        price: 6.0
+        price: 6.0,
+        img: './images/pastel.webp'
       },
       {
         id: 3,
         name: 'Frango Com Catupiry',
         description: 'Frango Com Catupiry',
-        price: 7.0
+        price: 7.0,
+        img: './images/pastel.webp'
       },
       {
         id: 4,
         name: 'Calabresa',
-        price: 7.0
+        price: 7.0,
+        img: './images/pastel.webp'
       },
       {
         id: 5,
         name: 'Carne De Sol',
         description: 'Carne De Sol E Queijo Mussarela',
-        price: 8.0
+        price: 8.0,
+        img: './images/pastel.webp'
       },
       {
         id: 6,
         name: 'Carne E Frango Com Catupiry',
         description: 'Carne E Frango Com Catupiry',
-        price: 8.5
+        price: 8.5,
+        img: './images/pastel.webp'
       },
       {
         id: 7,
         name: 'Frango Com Calabresa',
         description: 'Frango, Calabresa E Catupiry',
-        price: 7.5
+        price: 7.5,
+        img: './images/pastel.webp'
       },
       {
         id: 8,
         name: 'Carne Com Calabresa',
         description: 'Carne, Calabresa E Catupiry',
-        price: ''
+        price: 7.5,
+        img: './images/pastel.webp'
       },
       {
         id: 9,
         name: 'Carne, Calabresa E Catupiry',
         description: 'Carne, Frango, Calabresa E Catupiry',
-        price: 9.0
+        price: 9.0,
+        img: './images/pastel.webp'
       },
       {
         id: 10,
         name: '4-Queijo',
         description: 'Carne, Frango, Calabresa E Catupiry',
-        price: 6.0
+        price: 6.0,
+        img: './images/pastel.webp'
       },
       {
         id: 11,
         name: 'Sertanejo',
         description: 'Carne De Sol, Qualho E Cebola',
-        price: ''
+        price: 9.0,
+        img: './images/pastel.webp'
       }
     ]
   },
@@ -310,19 +331,22 @@ let cardapios = [
         id: 1,
         name: 'Cachorro Quente de Frango',
         description: 'Pão, Salsicha, Frango, Milho e Batata Palha',
-        price: 3.5
+        price: 3.5,
+        img: './images/cachorro quente.jpg'
       },
       {
         id: 2,
         name: 'Cachorro Quente de Carne ',
         description: 'Pão,Salsicha, Frango, Carne Moída, Milho e Batata Palha',
-        price: 4.0
+        price: 4.0,
+        img: './images/cachorro quente.jpg'
       },
       {
         id: 3,
         name: 'Cachorro Quente de Misto ',
         description: 'Pão,Salsicha, Frango, Carne Moída, Milho e Batata Palha',
-        price: 4.5
+        price: 4.5,
+        img: './images/cachorro quente.jpg'
       }
     ]
   },

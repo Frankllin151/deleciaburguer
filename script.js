@@ -78,9 +78,10 @@ for (let index = 0; index < description.length; ++index) {
   let nameT = ''
   let areapictures = ''
   for (let index = 0; index < names.length; ++index) {}
+  nameT = names[index]
   for (let index = 0; index < photo.length; ++index) {}
   areapictures = photo[index]
-  nameT = names[index]
+
   get('.pizza-item').innerHTML += `<div class="pizza-area">
   <img class="photo" src="${areapictures}" alt="">
   <div class="namep">${nameT}</div>
@@ -90,31 +91,66 @@ for (let index = 0; index < description.length; ++index) {
 
 //************
 // Cachorro Quente enviroment
+let imgphoto = CachorroQ.map(e => e.img)
 let namesQ = CachorroQ.map(e => e.name)
+let descriptionQ = CachorroQ.map(e => e.description)
 let txtQuente = ''
-namesQ.forEach(checknamesQ)
+let quendesc = ''
+let photoQ = ''
+for (let index = 0; index < namesQ.length; ++index) {
+  txtQuente = namesQ[index]
 
-function checknamesQ(item) {
-  txtQuente += ' ' + `<div class="quente-name">${item}</div>` + '<br>'
+  for (let index = 0; index < descriptionQ.length; ++index) {}
+  quendesc = descriptionQ[index]
+  for (let index = 0; index < imgphoto.length; ++index) {}
+  photoQ = imgphoto[index]
+  get('.quente-item').innerHTML += `<div class="quente-area">
+  <img class="photo" src="${photoQ}" alt="">
+  <div class="tituloQ">${txtQuente}</div>
+  <div class="descCQ">${quendesc}</div> 
+  </div>`
 }
-get('.quente-item').innerHTML = txtQuente
+
 /************* */
 // sanduiches
+let photoSand = sanduiches2.map(e => e.img)
 let sanduicheN = sanduiches2.map(e => e.name)
-let txtsaduinches = ''
-sanduicheN.forEach(item => {
-  txtsaduinches += ' ' + `<div class="sanduíches-name">${item}</div>` + '<br>'
-})
-get('.sanduíches-item').innerHTML = txtsaduinches
+let sandDesc = sanduiches2.map(e => e.description)
+let SanduiNM = ''
+let Sandesc = ''
+let photoS = ''
+for (let index = 0; index < sanduicheN.length; index++) {
+  SanduiNM = sanduicheN[index]
+  for (let index = 0; index < sandDesc.length; index++) {}
+  Sandesc = sandDesc[index]
+  for (let index = 0; index < photoSand.length; index++) {}
+  photoS = photoSand[index]
+
+  get('.sanduíches-item').innerHTML += ` <div class="area-Sand">
+  <img class="photo" src="${photoS}" alt="">
+  <div class="tituloSand">
+  ${SanduiNM}</div>
+  <div class=""descriptionS>${Sandesc}</div>
+  </div>`
+}
+
 /**************** */
 //´pATEIS
+let pateisimg = pateis.map(e => e.img)
+console.log(pateisimg)
 let pateisN = pateis.map(e => e.name)
-let txtpateis = ''
-pateisN.forEach(item => {
-  txtpateis += ' ' + `<div class="pateis-name">${item}</div>`
-})
+let pateisDesc = pateis.map(e => e.description)
+let imgP = ''
+let namepasteis = ''
+let descpasteis = ''
+for (let index = 0; index < pateisN.length; index++) {
+  descpasteis = pateisN[index]
 
-get('.pasteis-item').innerHTML = txtpateis
+  get('.pasteis-item').innerHTML += `<div class="titulo-pateis">
+   ${descpasteis}
+</div><div class="description-pasteis"></div>`
+}
+
 /*bebidas*/
 let bebidaN = bebidas.map(e => e.name)
 let txtbebida = ''
