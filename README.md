@@ -1,4 +1,4 @@
 # deleciaburguer
 
-Update arrays put them in html
-05/20/22
+Update!
+05/23/22

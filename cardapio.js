@@ -312,6 +312,7 @@ let cardapios = [
   },
   {
     acaiecremes: [
+      { monteacai: 'Monte seu açai com direito a 5 cobertura!' },
       {
         description:
           'Leite em pó - Farinha Láctea - Ovomaltine, Coco Ralado - Granola - Amendoin - Granulado - Confete - Choco ball - Cereal - Leite Condensado - Calda de Chocolate - Calda de Morango e Banana'
@@ -320,9 +321,9 @@ let cardapios = [
       {
         id: 2,
         size: '350ml',
-        rpice: 12.0
+        price: 8.0
       },
-      { id: 1, porcaoExtra: 1.0 }
+      { id: 3, size: '500ml', price: 12.0 }
     ]
   },
   {
@@ -352,13 +353,54 @@ let cardapios = [
   },
   {
     bebidas: [
-      { id: 1, name: 'Água Mineral 500ml', price: 2.0 },
-      { id: 2, name: 'Refrigerante 250ml', price: 2.0 },
-      { id: 3, name: 'Refrigerante Lata 350ml', price: 4.0 },
-      { id: 4, name: 'Refrigerante 1 Litro', price: 6.0 },
-      { id: 5, name: 'Suco na Água 400ml', price: 3.0 },
-      { id: 6, name: 'Suco no Leite 400ml', price: 4.0 },
-      { id: 7, name: 'Vitamina de Cupuaçu', price: 5.0 }
+      {
+        id: 1,
+        name: 'Água Mineral 500ml',
+        price: 2.0,
+        img: './images/Agua.jpg'
+      },
+
+      {
+        id: 2,
+        name: 'Refrigerante 250ml',
+        price: 2.0,
+        img: './images/refrigerate.png'
+      },
+
+      {
+        id: 3,
+        name: 'Refrigerante Lata 350ml',
+        price: 4.0,
+        img: './images/refrigerate.png'
+      },
+
+      {
+        id: 4,
+        name: 'Refrigerante 1 Litro',
+        price: 6.0,
+        img: './images/RG1litro.jpg'
+      },
+
+      {
+        id: 5,
+        name: 'Suco na Água 400ml',
+        price: 3.0,
+        img: './images/sucoA.jpg'
+      },
+
+      {
+        id: 6,
+        name: 'Suco no Leite 400ml',
+        price: 4.0,
+        img: './images/leiteS.jfif'
+      },
+
+      {
+        id: 7,
+        name: 'Vitamina de Cupuaçu',
+        price: 5.0,
+        img: './images/suco-cupuacu.jpg'
+      }
     ]
   }
 ]

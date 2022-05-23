@@ -97,6 +97,7 @@ let descriptionQ = CachorroQ.map(e => e.description)
 let txtQuente = ''
 let quendesc = ''
 let photoQ = ''
+// for loop of names, description and photo
 for (let index = 0; index < namesQ.length; ++index) {
   txtQuente = namesQ[index]
 
@@ -119,6 +120,7 @@ let sandDesc = sanduiches2.map(e => e.description)
 let SanduiNM = ''
 let Sandesc = ''
 let photoS = ''
+// for loop of names, description and photo
 for (let index = 0; index < sanduicheN.length; index++) {
   SanduiNM = sanduicheN[index]
   for (let index = 0; index < sandDesc.length; index++) {}
@@ -137,31 +139,51 @@ for (let index = 0; index < sanduicheN.length; index++) {
 /**************** */
 //´pATEIS
 let pateisimg = pateis.map(e => e.img)
-console.log(pateisimg)
 let pateisN = pateis.map(e => e.name)
-let pateisDesc = pateis.map(e => e.description)
 let imgP = ''
 let namepasteis = ''
-let descpasteis = ''
 for (let index = 0; index < pateisN.length; index++) {
-  descpasteis = pateisN[index]
-
-  get('.pasteis-item').innerHTML += `<div class="titulo-pateis">
-   ${descpasteis}
-</div><div class="description-pasteis"></div>`
+  namepasteis = pateisN[index]
+  for (let index = 0; index < pateisimg.length; index++) {}
+  imgP = pateisimg[index]
+  get('.pasteis-item').innerHTML += `<div class="pateis-area">
+  <img class="photo" src="${imgP}" alt="">
+  <div class="titulo-pateis">${namepasteis}</div>
+  </div>`
 }
 
 /*bebidas*/
 let bebidaN = bebidas.map(e => e.name)
+let pricedrink = bebidas.map(e => e.price)
+let picturesB = bebidas.map(e => e.img)
+let imgB = ''
+let priceB = ''
 let txtbebida = ''
-bebidaN.forEach(item => {
-  txtbebida += ' ' + `<div class="bebida-name">${item}</div>`
-})
-get('.bebida-item').innerHTML = txtbebida
+for (let index = 0; index < bebidaN.length; index++) {
+  txtbebida = bebidaN[index]
+  for (let index = 0; index < pricedrink.length; index++) {}
+
+  priceB = pricedrink[index]
+  let BpriceF = priceB.toFixed(2)
+  for (let index = 0; index < picturesB.length; index++) {}
+  imgB = picturesB[index]
+  get('.bebida-item').innerHTML += `<div class="area-drink">
+  <img class="photo" src="${imgB}" alt="">
+    <div class="drink-name">
+         ${txtbebida}
+    </div>
+    <div class="drink-price">
+    R$ ${BpriceF}
+    </div
+  `
+}
+
 /**acaiecremes */
-let acaiemN = acaiecreme.map(e => e.name)
-let txtacaicreme = ''
-acaiemN.forEach(item => {
-  txtacaicreme += ' ' + `<div class="creme-name">${item}</div>`
-})
-get('.creme-item').innerHTML = txtacaicreme
+let acaiemT = acaiecreme.map(e => e.monteacai)
+let descriptioncreme = acaiecreme.map(e => e.description)
+let MTcaicreme = ''
+let descAcai = ''
+get('.creme-item').innerHTML = `<div class="acai-area">
+<div class="monteacai">${acaiemT}</div>
+<div class="desc-acai">${descriptioncreme}</div>
+</div> `

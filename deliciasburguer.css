@@ -68,6 +68,7 @@ flex-direction: column;
   height: 100vh;
   background-color: rgb(253, 231, 234);
   display: none;
+  flex-direction: column;
 }
 /**cardapio-açaiecreme***/
 .cardapio-açaiecreme{
@@ -75,6 +76,7 @@ flex-direction: column;
   height: 100vh;
   background-color: rgb(253, 231, 234);
   display: none;
+  flex-direction: column;
 }
 /**cardapio-pateis*/
 .cardapio-pateis{
@@ -82,6 +84,7 @@ flex-direction: column;
   height: 100vh;
   background-color: rgb(253, 231, 234);
   display: none;
+  flex-direction: column;
 }
 .buycardapio-descriçao{
   margin-top: 300px;
