@@ -72,20 +72,28 @@ function cremeacai() {
 let names = pizzaaopen.map(e => e.name)
 let description = pizzaaopen.map(e => e.description)
 let photo = pizzaaopen.map(e => e.src)
+let priceP = pizzaaopen.map(e => e.price)
+
 // for loop of names, description and photo
 for (let index = 0; index < description.length; ++index) {
   let element = description[index]
   let nameT = ''
   let areapictures = ''
+  let pricePZ = ''
   for (let index = 0; index < names.length; ++index) {}
   nameT = names[index]
   for (let index = 0; index < photo.length; ++index) {}
   areapictures = photo[index]
-
+  for (let index = 0; index < priceP.length; index++) {}
+  pricePZ = priceP[index]
+  let PzA = pricePZ[0].toFixed(2)
   get('.pizza-item').innerHTML += `<div class="pizza-area">
   <img class="photo" src="${areapictures}" alt="">
   <div class="namep">${nameT}</div>
   <p class="description"> ${element}</p>
+  <div class="price-pizza">
+        R$ ${PzA}
+  </div>
   </div>`
 }
 
@@ -94,6 +102,9 @@ for (let index = 0; index < description.length; ++index) {
 let imgphoto = CachorroQ.map(e => e.img)
 let namesQ = CachorroQ.map(e => e.name)
 let descriptionQ = CachorroQ.map(e => e.description)
+let priceHG = CachorroQ.map(e => e.price)
+
+let priceQ = ''
 let txtQuente = ''
 let quendesc = ''
 let photoQ = ''
@@ -105,10 +116,15 @@ for (let index = 0; index < namesQ.length; ++index) {
   quendesc = descriptionQ[index]
   for (let index = 0; index < imgphoto.length; ++index) {}
   photoQ = imgphoto[index]
+  for (let index = 0; index < priceHG.length; index++) {}
+  priceQ = priceHG[index].toFixed(2)
   get('.quente-item').innerHTML += `<div class="quente-area">
   <img class="photo" src="${photoQ}" alt="">
   <div class="tituloQ">${txtQuente}</div>
   <div class="descCQ">${quendesc}</div> 
+  <div class="priceQ">
+     R$ ${priceQ}
+  </div>
   </div>`
 }
 
@@ -117,6 +133,8 @@ for (let index = 0; index < namesQ.length; ++index) {
 let photoSand = sanduiches2.map(e => e.img)
 let sanduicheN = sanduiches2.map(e => e.name)
 let sandDesc = sanduiches2.map(e => e.description)
+let sandprice = sanduiches2.map(e => e.price)
+let priceS = ''
 let SanduiNM = ''
 let Sandesc = ''
 let photoS = ''
@@ -127,12 +145,17 @@ for (let index = 0; index < sanduicheN.length; index++) {
   Sandesc = sandDesc[index]
   for (let index = 0; index < photoSand.length; index++) {}
   photoS = photoSand[index]
+  for (let index = 0; index < sandprice.length; index++) {}
+  priceS = sandprice[index].toFixed(2)
 
   get('.sanduíches-item').innerHTML += ` <div class="area-Sand">
   <img class="photo" src="${photoS}" alt="">
   <div class="tituloSand">
   ${SanduiNM}</div>
-  <div class=""descriptionS>${Sandesc}</div>
+  <div class="descriptionS">${Sandesc}</div>
+  <div class="pricesand">
+   R$ ${priceS}
+  </div>
   </div>`
 }
 
@@ -140,15 +163,22 @@ for (let index = 0; index < sanduicheN.length; index++) {
 //´pATEIS
 let pateisimg = pateis.map(e => e.img)
 let pateisN = pateis.map(e => e.name)
+let pateisprice = pateis.map(e => e.price)
+let pricePTS = ''
 let imgP = ''
 let namepasteis = ''
 for (let index = 0; index < pateisN.length; index++) {
   namepasteis = pateisN[index]
   for (let index = 0; index < pateisimg.length; index++) {}
   imgP = pateisimg[index]
+  for (let index = 0; index < pateisprice.length; index++) {}
+  pricePTS = pateisprice[index].toFixed(2)
   get('.pasteis-item').innerHTML += `<div class="pateis-area">
   <img class="photo" src="${imgP}" alt="">
   <div class="titulo-pateis">${namepasteis}</div>
+   <div class="price-pateis">
+R$ ${pricePTS}
+   </div>
   </div>`
 }
 

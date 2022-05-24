@@ -21,17 +21,29 @@ width: 100%;
   display: none;
   flex-direction: column;
 }
-.pizza-item{
+.pizza-item, 
+.quente-item, 
+.sanduíches-item, 
+.bebida-item, 
+.pasteis-item {
   display: flex;
   flex-wrap: wrap;
-  
- 
- 
 }
 
-.pizza-area, .quente-area, .area-Sand{
+.pizza-area, 
+.quente-area, 
+.area-Sand, 
+.pateis-area,
+.area-drink{
   flex: 1;
-  margin: 30px;
+  margin: 37px;
+  width: 230px;
+  height: 150px;
+ 
+}
+.pizza-area:hover{
+ color: #ccc;
+ cursor: pointer;
 }
 .photo{
   width: 50px;
@@ -42,8 +54,25 @@ width: 100%;
   width: 50px;
   height: 50px;
 }
-.namep, .tituloQ, .tituloSand{
+.namep,
+.tituloQ, 
+.tituloSand, 
+.titulo-pateis{
   font-size: 1.3rem;
+}
+
+.description,
+.descCQ,
+.descriptionS{
+  font-size: 0.8rem;
+}
+.price-pizza, 
+.priceQ,
+.pricesand,
+.price-pateis,
+.drink-price
+{
+font-size: 1.4rem;
 }
 /*cachorro quente*/
 .cardapio-Quente{

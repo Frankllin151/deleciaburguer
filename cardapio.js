@@ -213,7 +213,7 @@ let cardapios = [
         price: 10.0,
         img: './images/bigburguer.jfif'
       },
-      ,
+
       {
         id: 9,
         name: 'X-salada',
@@ -315,7 +315,7 @@ let cardapios = [
       { monteacai: 'Monte seu açai com direito a 5 cobertura!' },
       {
         description:
-          'Leite em pó - Farinha Láctea - Ovomaltine, Coco Ralado - Granola - Amendoin - Granulado - Confete - Choco ball - Cereal - Leite Condensado - Calda de Chocolate - Calda de Morango e Banana'
+          'Leite em pó-Farinha Láctea - Ovomaltine, Coco Ralado - Granola - Amendoin - Granulado - Confete - Choco ball - Cereal - Leite Condensado - Calda de Chocolate - Calda de Morango e Banana'
       },
       { id: 1, size: '250ml', price: 6.0 },
       {
