@@ -236,6 +236,7 @@ let cardapios = [
       {
         id: 1,
         name: 'Queijo',
+        description: 'Queijo ',
         price: 5.0,
         img: './images/pastel.webp'
       },
@@ -256,6 +257,7 @@ let cardapios = [
       {
         id: 4,
         name: 'Calabresa',
+        description: 'Calabresa',
         price: 7.0,
         img: './images/pastel.webp'
       },

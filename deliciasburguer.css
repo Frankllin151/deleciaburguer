@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Quicksand:wght@300&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -7,11 +9,13 @@
 .menu{
 width: 100%;
   display: flex;
+  
 }
 .cardapio-0{
   margin: 1rem;
   background-color: pink;
   cursor: pointer;
+
 }
 /*pizza*/
 .cardapio-pizza{
@@ -37,12 +41,17 @@ width: 100%;
 .area-drink{
   flex: 1;
   margin: 37px;
+  margin-top: 100px;
   width: 230px;
   height: 150px;
  
 }
-.pizza-area:hover{
- color: #ccc;
+.pizza-area:hover, 
+.quente-area:hover, 
+.area-Sand:hover, 
+.pateis-area:hover,
+ .area-drink:hover {
+ color: rgb(173, 173, 173);
  cursor: pointer;
 }
 .photo{
@@ -57,14 +66,18 @@ width: 100%;
 .namep,
 .tituloQ, 
 .tituloSand, 
-.titulo-pateis{
+.titulo-pateis, .drink-name{
   font-size: 1.3rem;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
 }
 
 .description,
 .descCQ,
-.descriptionS{
+.descriptionS, .pateisDesc{
   font-size: 0.8rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }
 .price-pizza, 
 .priceQ,
@@ -121,5 +134,21 @@ flex-direction: column;
   height: 20px ;
   background-color: bisque;
 }
-/*pizza-img**/
+/*add-display*/
+.sectionwindow{
+  display: flex;
+  justify-content: center;
+ 
+}
+.add-display{
+  width: 800px;
+  height: 500px;
+  background-color: rgb(189, 110, 110); 
 
+ 
+}
+.description-add{
+  margin-left: 100px;
+  margin-top: 30px;
+  background-color: rgb(189, 110, 110);
+}

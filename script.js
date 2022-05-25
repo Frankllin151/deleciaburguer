@@ -73,7 +73,6 @@ let names = pizzaaopen.map(e => e.name)
 let description = pizzaaopen.map(e => e.description)
 let photo = pizzaaopen.map(e => e.src)
 let priceP = pizzaaopen.map(e => e.price)
-
 // for loop of names, description and photo
 for (let index = 0; index < description.length; ++index) {
   let element = description[index]
@@ -164,6 +163,8 @@ for (let index = 0; index < sanduicheN.length; index++) {
 let pateisimg = pateis.map(e => e.img)
 let pateisN = pateis.map(e => e.name)
 let pateisprice = pateis.map(e => e.price)
+let pateidescription = pateis.map(e => e.description)
+let pateisDEsc = ''
 let pricePTS = ''
 let imgP = ''
 let namepasteis = ''
@@ -171,11 +172,14 @@ for (let index = 0; index < pateisN.length; index++) {
   namepasteis = pateisN[index]
   for (let index = 0; index < pateisimg.length; index++) {}
   imgP = pateisimg[index]
+  for (let index = 0; index < pateidescription.length; index++) {}
+  pateisDEsc = pateidescription[index]
   for (let index = 0; index < pateisprice.length; index++) {}
   pricePTS = pateisprice[index].toFixed(2)
   get('.pasteis-item').innerHTML += `<div class="pateis-area">
   <img class="photo" src="${imgP}" alt="">
   <div class="titulo-pateis">${namepasteis}</div>
+  <div class="pateisDesc">${pateisDEsc}</div>
    <div class="price-pateis">
 R$ ${pricePTS}
    </div>
@@ -203,8 +207,8 @@ for (let index = 0; index < bebidaN.length; index++) {
          ${txtbebida}
     </div>
     <div class="drink-price">
-    R$ ${BpriceF}
-    </div
+    R$ ${BpriceF}</div>
+    </div>
   `
 }
 
@@ -217,3 +221,5 @@ get('.creme-item').innerHTML = `<div class="acai-area">
 <div class="monteacai">${acaiemT}</div>
 <div class="desc-acai">${descriptioncreme}</div>
 </div> `
+/******************************section add menu*********************** */
+function displayadd() {}
