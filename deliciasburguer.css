@@ -4,7 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(253, 231, 234);
+ 
+}
+body{
+  background-color: white;
 }
 .menu{
 width: 100%;
@@ -15,16 +18,24 @@ width: 100%;
   margin: 1rem;
   background-color: pink;
   cursor: pointer;
-
+}
+.titulo{
+  font-size: 1.3rem;
 }
 /*pizza*/
 .cardapio-pizza{
   width: 100%;
   height: 100vw;
-  background-color: rgb(253, 231, 234);
+ 
   display: none;
   flex-direction: column;
 }
+
+/*************menu-bulyy*/
+.menu-bulyy{
+  background-color: rgb(252, 226, 226);
+}
+
 .pizza-item, 
 .quente-item, 
 .sanduíches-item, 
@@ -32,6 +43,7 @@ width: 100%;
 .pasteis-item {
   display: flex;
   flex-wrap: wrap;
+  background-color: rgb(252, 226, 226);
 }
 
 .pizza-area, 
@@ -53,6 +65,7 @@ width: 100%;
  .area-drink:hover {
  color: rgb(173, 173, 173);
  cursor: pointer;
+ 
 }
 .photo{
   width: 50px;
@@ -91,7 +104,7 @@ font-size: 1.4rem;
 .cardapio-Quente{
   width: 100%;
   height: 100vh;
-  background-color: rgb(253, 231, 234);
+  
   display: none;
 flex-direction: column;
 }
@@ -100,7 +113,7 @@ flex-direction: column;
 .cardapio-sanduíches{
   width: 100%;
   height: 100vh;
-  background-color: rgb(253, 231, 234);
+ 
   display: none;
   flex-direction: column;
 }
@@ -108,7 +121,7 @@ flex-direction: column;
 .cardapio-drink{
   width: 100%;
   height: 100vh;
-  background-color: rgb(253, 231, 234);
+  
   display: none;
   flex-direction: column;
 }
@@ -116,7 +129,7 @@ flex-direction: column;
 .cardapio-açaiecreme{
   width: 100%;
   height: 100vh;
-  background-color: rgb(253, 231, 234);
+  
   display: none;
   flex-direction: column;
 }
@@ -124,7 +137,7 @@ flex-direction: column;
 .cardapio-pateis{
   width: 100%;
   height: 100vh;
-  background-color: rgb(253, 231, 234);
+  
   display: none;
   flex-direction: column;
 }
@@ -132,23 +145,70 @@ flex-direction: column;
   margin-top: 300px;
   width: 100%;
   height: 20px ;
-  background-color: bisque;
+ 
 }
 /*add-display*/
 .sectionwindow{
   display: flex;
   justify-content: center;
+ position: relative;
  
 }
 .add-display{
   width: 800px;
   height: 500px;
-  background-color: rgb(189, 110, 110); 
+  background-color: rgb(226, 143, 143); 
+position: absolute;
+bottom: 900px;
+}
+.nameAndDescription{
+  position: absolute;
 
+  bottom: 440px;
+  left: 250px;
  
 }
+.name-add{
+ 
+
+}
 .description-add{
-  margin-left: 100px;
-  margin-top: 30px;
-  background-color: rgb(189, 110, 110);
+ 
+  
+}
+/*AREA PRICE AND SIZE*/
+.price-size{
+  
+}
+.area-price, .area-size{
+
+}
+/*area button */
+.area-button{
+  
+  position: relative;
+}
+.add{
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+.cancel, .add{
+  cursor: pointer;
+}
+.cancel{
+position: absolute;
+top: 200px;
+left: 80%;
+}
+.Photograph{
+  background-color: aqua;
+  width: 180px;
+  height: 180px;
+}
+.Photograph img{
+ background-size: cover;
+ object-fit: cover;
+ width: 180px;
+ height: 180px;
 }
