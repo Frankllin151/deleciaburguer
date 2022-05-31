@@ -86,7 +86,7 @@ for (let index = 0; index < description.length; ++index) {
   for (let index = 0; index < priceP.length; index++) {}
   pricePZ = priceP[index]
   let PzA = pricePZ[0].toFixed(2)
-  get('.pizza-item').innerHTML += `<div class="pizza-area">
+  get('.pizza-item').innerHTML += `<div onclick="Screen()" class="pizza-area">
   <img class="photo" src="${areapictures}" alt="">
   <div class="namep">${nameT}</div>
   <p class="description"> ${element}</p>
@@ -117,7 +117,9 @@ for (let index = 0; index < namesQ.length; ++index) {
   photoQ = imgphoto[index]
   for (let index = 0; index < priceHG.length; index++) {}
   priceQ = priceHG[index].toFixed(2)
-  get('.quente-item').innerHTML += `<div class="quente-area">
+  get(
+    '.quente-item'
+  ).innerHTML += `<div onclick="screenQ()" class="quente-area">
   <img class="photo" src="${photoQ}" alt="">
   <div class="tituloQ">${txtQuente}</div>
   <div class="descCQ">${quendesc}</div> 
@@ -222,4 +224,30 @@ get('.creme-item').innerHTML = `<div class="acai-area">
 <div class="desc-acai">${descriptioncreme}</div>
 </div> `
 /******************************section add menu*********************** */
-function displayadd() {}
+/*const pizzabutton = document.querySelectorAll('.pizza-area')
+console.log(pizzabutton)
+pizzabutton.addEventListener('click', item => {
+  item.get('.sectionwindow').style.display = 'flex'
+})*/
+function Screen() {
+  get('.sectionwindow').style.display = 'flex'
+  let main = window.scrollTo(0, 500)
+  if (main > 0) {
+    window.scrollTo(0, 0)
+  } else {
+    window.scrollTo(0, 0.2)
+  }
+}
+function screenQ() {
+  get('.sectionwindow').style.display = 'flex'
+  let main = window.scrollTo(0, 500)
+  if (main > 0) {
+    window.scrollTo(0, 0)
+  } else {
+    window.scrollTo(0, 0.2)
+  }
+}
+const cancelbully = get('.cancel')
+cancelbully.addEventListener('click', item => {
+  get('.sectionwindow').style.display = 'none'
+})
