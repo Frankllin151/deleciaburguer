@@ -159,8 +159,8 @@ flex-direction: column;
   width: 800px;
   height: 500px;
   background-color: rgb(226, 143, 143); 
-position: absolute;
-bottom: 900px;
+position: fixed;
+bottom: 90px;
 }
 .nameAndDescription{
   position: absolute;
@@ -212,4 +212,24 @@ left: 80%;
  object-fit: cover;
  width: 180px;
  height: 180px;
+}
+/**add-screen-pix*/
+.add-screen-pix{
+  position:fixed;
+  top: 0px;
+  right: 0px;
+  width: 20%;
+  height: 100%;
+  display: none;
+  background-color: red;
+}
+#fechar{
+  width: 80px;
+  height: 20px;
+ 
+}
+#comprar{ 
+  width: 80px;
+   height: 20px;
+   background-color: yellow;
 }

@@ -149,7 +149,9 @@ for (let index = 0; index < sanduicheN.length; index++) {
   for (let index = 0; index < sandprice.length; index++) {}
   priceS = sandprice[index].toFixed(2)
 
-  get('.sanduíches-item').innerHTML += ` <div class="area-Sand">
+  get(
+    '.sanduíches-item'
+  ).innerHTML += ` <div class="area-Sand"  onclick="sandScreen()">
   <img class="photo" src="${photoS}" alt="">
   <div class="tituloSand">
   ${SanduiNM}</div>
@@ -178,7 +180,9 @@ for (let index = 0; index < pateisN.length; index++) {
   pateisDEsc = pateidescription[index]
   for (let index = 0; index < pateisprice.length; index++) {}
   pricePTS = pateisprice[index].toFixed(2)
-  get('.pasteis-item').innerHTML += `<div class="pateis-area">
+  get(
+    '.pasteis-item'
+  ).innerHTML += `<div class="pateis-area" onclick="ScreenPT()">
   <img class="photo" src="${imgP}" alt="">
   <div class="titulo-pateis">${namepasteis}</div>
   <div class="pateisDesc">${pateisDEsc}</div>
@@ -203,7 +207,9 @@ for (let index = 0; index < bebidaN.length; index++) {
   let BpriceF = priceB.toFixed(2)
   for (let index = 0; index < picturesB.length; index++) {}
   imgB = picturesB[index]
-  get('.bebida-item').innerHTML += `<div class="area-drink">
+  get(
+    '.bebida-item'
+  ).innerHTML += `<div class="area-drink" onclick="Screendrink()">
   <img class="photo" src="${imgB}" alt="">
     <div class="drink-name">
          ${txtbebida}
@@ -238,6 +244,7 @@ function Screen() {
     window.scrollTo(0, 0.2)
   }
 }
+// function hot dog
 function screenQ() {
   get('.sectionwindow').style.display = 'flex'
   let main = window.scrollTo(0, 500)
@@ -247,7 +254,47 @@ function screenQ() {
     window.scrollTo(0, 0.2)
   }
 }
+// function sanduiches
+function sandScreen() {
+  get('.sectionwindow').style.display = 'flex'
+  let main = window.scrollTo(0, 500)
+  if (main > 0) {
+    window.scrollTo(0, 0)
+  } else {
+    window.scrollTo(0, 0.2)
+  }
+}
+function ScreenPT() {
+  get('.sectionwindow').style.display = 'flex'
+  let main = window.scrollTo(0, 500)
+  if (main > 0) {
+    window.scrollTo(0, 0)
+  } else {
+    window.scrollTo(0, 0.2)
+  }
+}
+function Screendrink() {
+  get('.sectionwindow').style.display = 'flex'
+  let main = window.scrollTo(0, 500)
+  if (main > 0) {
+    window.scrollTo(0, 0)
+  } else {
+    window.scrollTo(0, 0.2)
+  }
+}
+// cancel function
 const cancelbully = get('.cancel')
 cancelbully.addEventListener('click', item => {
   get('.sectionwindow').style.display = 'none'
+})
+//adicionar function
+const adicionar = get('.add')
+adicionar.addEventListener('click', item => {
+  get('.add-screen-pix').style.display = 'flex'
+  get('.sectionwindow').style.display = 'none'
+})
+// function button fechar=closed
+const fechar = get('#fechar')
+fechar.addEventListener('click', item => {
+  get('.add-screen-pix').style.display = 'none'
 })
