@@ -2,7 +2,7 @@ let cardapios = [
   {
     pizza: [
       {
-        id: 1,
+        id: 'mussarela0',
         name: 'Mussarela',
         description: 'Molho: Mussarela, Tomate,Azeitona e Orégano ',
         price: [20.0, 26.0, 32.0],
@@ -10,7 +10,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 2,
+        id: 'mistadiv',
         name: 'Mista',
         description: 'Molho: Mussarela, Apresuntado,Tomate e Orégano  ',
         price: [20.0, 26.0, 32.0],

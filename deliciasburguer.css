@@ -10,6 +10,9 @@
 body{
   background-color: white;
 }
+.main{
+  display: none;
+}
 .menu{
 width: 100%;
   display: flex;
@@ -222,6 +225,7 @@ left: 80%;
   height: 100%;
   display: none;
   background-color: red;
+ 
 }
 #fechar{
   width: 80px;

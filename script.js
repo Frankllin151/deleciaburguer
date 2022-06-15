@@ -70,6 +70,7 @@ function cremeacai() {
 
 // pizza enviroment
 let names = pizzaaopen.map(e => e.name)
+let identifier = pizzaaopen.map(dev => dev.id)
 let description = pizzaaopen.map(e => e.description)
 let photo = pizzaaopen.map(e => e.src)
 let priceP = pizzaaopen.map(e => e.price)
@@ -79,6 +80,7 @@ for (let index = 0; index < description.length; ++index) {
   let nameT = ''
   let areapictures = ''
   let pricePZ = ''
+  let classidentifier = ''
   for (let index = 0; index < names.length; ++index) {}
   nameT = names[index]
   for (let index = 0; index < photo.length; ++index) {}
@@ -86,16 +88,25 @@ for (let index = 0; index < description.length; ++index) {
   for (let index = 0; index < priceP.length; index++) {}
   pricePZ = priceP[index]
   let PzA = pricePZ[0].toFixed(2)
-  get('.pizza-item').innerHTML += `<div onclick="Screen()" class="pizza-area">
+  var spanmain = '5555'
+  for (let index = 0; index < identifier.length; index++) {}
+  classidentifier = identifier[index]
+  console.log(classidentifier)
+  get(
+    '.pizza-item'
+  ).innerHTML += `<div onclick="Screen()"class="${classidentifier}">
   <img class="photo" src="${areapictures}" alt="">
   <div class="namep">${nameT}</div>
   <p class="description"> ${element}</p>
   <div class="price-pizza">
-        R$ ${PzA}
+       
+        <span> R$ ${PzA}</span>
+        <span  class="main"></span>
+        <span class="main"></span>
+         
   </div>
   </div>`
 }
-
 //************
 // Cachorro Quente enviroment
 let imgphoto = CachorroQ.map(e => e.img)
@@ -230,11 +241,7 @@ get('.creme-item').innerHTML = `<div class="acai-area">
 <div class="desc-acai">${descriptioncreme}</div>
 </div> `
 /******************************section add menu*********************** */
-/*const pizzabutton = document.querySelectorAll('.pizza-area')
-console.log(pizzabutton)
-pizzabutton.addEventListener('click', item => {
-  item.get('.sectionwindow').style.display = 'flex'
-})*/
+// pizza function
 function Screen() {
   get('.sectionwindow').style.display = 'flex'
   let main = window.scrollTo(0, 500)
@@ -243,6 +250,7 @@ function Screen() {
   } else {
     window.scrollTo(0, 0.2)
   }
+  alert('indetifier')
 }
 // function hot dog
 function screenQ() {
@@ -298,3 +306,48 @@ const fechar = get('#fechar')
 fechar.addEventListener('click', item => {
   get('.add-screen-pix').style.display = 'none'
 })
+// identifier id to copy array
+/*if (classp == 'Mussarela') {
+  console.log('deu certo')
+} else {
+  console.log('deu errado!!')
+}*/
+
+/********/
+let teste = pizzaaopen.filter(dev => dev.id == 'mussarela0')
+
+console.log(teste)
+var mains = getAll('.pizza-area')
+let div1 = mains[0]
+if (div1 != 'Mussarela') {
+  let txtdivs = div1.textContent
+
+  console.log(txtdivs)
+} else {
+  console.log('error failed')
+}
+let div2 = mains[1]
+let div3 = mains[2]
+let div4 = mains[3]
+let div5 = mains[4]
+let div6 = mains[5]
+let div7 = mains[6]
+let div8 = mains[8]
+let div9 = mains[9]
+let div20 = mains[10]
+let div11 = mains[11]
+let div12 = mains[12]
+let div13 = mains[13]
+let div14 = mains[14]
+let div15 = mains[15]
+let div16 = mains[16]
+let div17 = mains[17]
+/*document.querySelector('.add-display').innerHTML += teste.map(appeararray)
+function appeararray(item) {
+  return (innerHTML = item.size)
+}*/
+/*if (teste3 == 0) {
+  alert('deu certo')
+} else {
+  alert('erro failed')
+}*/
