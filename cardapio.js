@@ -2,7 +2,7 @@ let cardapios = [
   {
     pizza: [
       {
-        id: 'mussarela0',
+        id: 'musarela',
         name: 'Mussarela',
         description: 'Molho: Mussarela, Tomate,Azeitona e Orégano ',
         price: [20.0, 26.0, 32.0],
@@ -10,7 +10,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 'mistadiv',
+        id: 'mista',
         name: 'Mista',
         description: 'Molho: Mussarela, Apresuntado,Tomate e Orégano  ',
         price: [20.0, 26.0, 32.0],
@@ -18,7 +18,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 3,
+        id: 'frango',
         name: 'Frango C/Catupiry',
         description: 'Molho: Mussarela, Frango ,Catupiry, Milho e Orégano  ',
         price: [23.0, 28.0, 34.0],
@@ -26,7 +26,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 4,
+        id: 'diplomata',
         name: 'Diplomata',
         description: 'Molho: Mussarela, Frango ,Calabresa, Milho e Orégano  ',
         price: [23.0, 28.0, 36.0],
@@ -34,7 +34,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 5,
+        id: 'calabresa',
         name: 'Calabresa',
         description: 'Molho: Mussarela, Calabresa , Cebola e Orégano  ',
         price: [23.0, 28.0, 34.0],
@@ -42,7 +42,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 6,
+        id: 'cheddar',
         name: 'Calabresa cheddar',
         description: 'Molho: Mussarela, Calabresa , Cheddar e Orégano  ',
         price: [24.0, 29.0, 35.0],
@@ -50,7 +50,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 7,
+        id: 'bacon',
         name: 'Bacon',
         description: 'Molho: Mussarela, Bacon, Cebola e Orégano  ',
         price: [23.0, 28.0, 34.0],
@@ -58,7 +58,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 8,
+        id: 'portuguesa',
         name: 'Portuguesa',
         description:
           'Molho: Mussarela, Apresuntado ,ovos, Azeitona, Tomate e Orégano',
@@ -67,7 +67,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 9,
+        id: 'queijo',
         name: '4 Queijo',
         description: 'Molho: Mussarela, Catupiry , Cheddar, Qualho e Orégano  ',
         price: [24.0, 29.0, 35.0],
@@ -75,7 +75,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 10,
+        id: 'sertaneja',
         name: 'Sertaneja',
         description: 'Molho: Mussarela, Carne de sol, Qualho e Orégano  ',
         price: [27.0, 36.0, 40.0],
@@ -83,7 +83,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 11,
+        id: 'toscana',
         name: 'Toscana',
         description:
           'Molho: Mussarela,  Carne de sol , Calabresa, Catupiry, Cebola e Orégano    ',
@@ -92,7 +92,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 12,
+        id: 'modacasa',
         name: 'Á Moda da casa',
         description:
           'Molho: Mussarela, Apresuntado , Bacon, Frango, Cebola e Orégano    ',
@@ -101,7 +101,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 13,
+        id: 'espanhola',
         name: 'Espanhola',
         description: 'Molho: Mussarela, Apresuntado,Calabresa e Orégano  ',
         price: [23.0, 28.0, 35.0],
@@ -109,7 +109,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 14,
+        id: 'brigadeiro',
         name: 'Brigadeiro',
         description:
           'Creme de Leite, Salpicado de Mussarela, chocolate ao leite e Granulado',
@@ -118,7 +118,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 15,
+        id: 'chocolate',
         name: 'Chocolate Crocante',
         description:
           'Creme de Leite, Salpicado  de Mussarela, Chocolate ao Leite e Amendoin ',
@@ -127,7 +127,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 16,
+        id: 'cartola',
         name: 'Cartola',
         description:
           'Creme de Leite, Salpicado de Mussarela, Chocolate ao Leite, Banana e Canela',
@@ -136,7 +136,7 @@ let cardapios = [
         src: './images/pizza.png'
       },
       {
-        id: 17,
+        id: 'serenata',
         name: 'Serenata',
         description:
           'Creme de Leite, Salpicado de Mussarela, Chocolate ao Leite e Serenata',
@@ -150,7 +150,7 @@ let cardapios = [
   {
     Sanduiches: [
       {
-        id: 1,
+        id: 'bauruEsP',
         name: 'Bauru Especial',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé, Molho Cheddar, Queijo e Apresuntado',
@@ -158,7 +158,7 @@ let cardapios = [
         img: './images/bigburguer.jfif'
       },
       {
-        id: 2,
+        id: 'Xburguer',
         name: 'X-burguer',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé. Molho Cheddar, Queijo, Apresuntado E Salsicha',
@@ -166,7 +166,7 @@ let cardapios = [
         img: './images/bigburguer.jfif'
       },
       {
-        id: 3,
+        id: 'xDog',
         name: 'X-dog',
         description:
           'Pão, Alface, Tomate, Ovd, Salsicha, Molho Rosé, Milho Cheddar, Queijo E Apresuntado',
@@ -174,7 +174,7 @@ let cardapios = [
         img: './images/bigburguer.jfif'
       },
       {
-        id: 4,
+        id: 'Xfrango',
         name: 'X-frango',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Frango Com Catupiry',
@@ -182,7 +182,7 @@ let cardapios = [
         img: './images/bigburguer.jfif'
       },
       {
-        id: 5,
+        id: 'Xcarn',
         name: 'X-carne',
         description:
           'Pão, Alface, Tomate, Ovd, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Carne De Sol',
@@ -190,7 +190,7 @@ let cardapios = [
         img: './images/bigburguer.jfif'
       },
       {
-        id: 6,
+        id: 'Xcalabresa',
         name: 'X-calabresa',
         description:
           'Pão, Alface, Tomate, Ovd, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Calabresa',
@@ -198,7 +198,7 @@ let cardapios = [
         img: './images/bigburguer.jfif'
       },
       {
-        id: 7,
+        id: 'Xbacon',
         name: 'X-bacon',
         description:
           'Pão, Alface, Tomate, Ovd, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado E Bacon',
@@ -206,7 +206,7 @@ let cardapios = [
         img: './images/bigburguer.jfif'
       },
       {
-        id: 8,
+        id: 'tudoX',
         name: 'X-tudo',
         description:
           'Pão, Alface, Tomate, Ovo, Hambúrguer, Molho Rosé,Molho Cheddar, Queijo, Apresuntado, Frango C/ Catupiry.Calabresa E Bacon',
@@ -215,14 +215,14 @@ let cardapios = [
       },
 
       {
-        id: 9,
+        id: 'Xsalada',
         name: 'X-salada',
         description: 'Pao, Alface, Tomate, E Frango',
         price: 6.5,
         img: './images/bigburguer.jfif'
       },
       {
-        id: 10,
+        id: 'tudaoX',
         name: 'X-tudão',
         description:
           'Pão, Alface, Tomate, 2 Ovos, 2 Hamburgueres, Molho Rosé,Molho Cheddar, Queijo, Apresuntado, Bacon, Frango, Calabresa E Salsicha',
@@ -331,21 +331,21 @@ let cardapios = [
   {
     cachorroQuente: [
       {
-        id: 1,
+        id: 'FrangoQ',
         name: 'Cachorro Quente de Frango',
         description: 'Pão, Salsicha, Frango, Milho e Batata Palha',
         price: 3.5,
         img: './images/cachorro quente.jpg'
       },
       {
-        id: 2,
+        id: 'carneQ',
         name: 'Cachorro Quente de Carne ',
         description: 'Pão,Salsicha, Frango, Carne Moída, Milho e Batata Palha',
         price: 4.0,
         img: './images/cachorro quente.jpg'
       },
       {
-        id: 3,
+        id: 'mistoQ',
         name: 'Cachorro Quente de Misto ',
         description: 'Pão,Salsicha, Frango, Carne Moída, Milho e Batata Palha',
         price: 4.5,

@@ -172,20 +172,34 @@ bottom: 90px;
   left: 250px;
  
 }
-.name-add{
- 
 
-}
-.description-add{
- 
-  
-}
 /*AREA PRICE AND SIZE*/
-.price-size{
-  
+.pricepizza{
+ display: flex; 
+ width: 150px;
+ margin: 10px;
+ flex-direction: row;
+ border: 2px solid rgb(199, 199, 199) ;
+ justify-content: space-evenly;
+ border-radius: 3px;
+ background-color: brown;
 }
-.area-price, .area-size{
+.priceAll{
+  width: 100px;
+  margin: 10px;
+  display: flex; 
+  border: 2px solid rgb(199, 199, 199) ;
+  border-radius: 3px;
+}
+#price1, #price2, #price3{
+  border: 1px solid rgb(199, 199, 199);
+padding-left: 7.5px;
+padding-right: 7.5px;
+padding: 6px;
 
+}
+.showcolor{
+  background-color: antiquewhite;
 }
 /*area button */
 .area-button{
@@ -206,7 +220,7 @@ top: 200px;
 left: 80%;
 }
 .Photograph{
-  background-color: aqua;
+  background-color:rgb(226, 143, 143);
   width: 180px;
   height: 180px;
 }
