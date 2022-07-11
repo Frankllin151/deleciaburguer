@@ -234,77 +234,77 @@ let cardapios = [
   {
     pateis: [
       {
-        id: 1,
+        id: 'queijjo',
         name: 'Queijo',
         description: 'Queijo ',
         price: 5.0,
         img: './images/pastel.webp'
       },
       {
-        id: 2,
+        id: 'mst',
         name: 'Misto',
         description: 'Queijo, Apresuntado E Oregano',
         price: 6.0,
         img: './images/pastel.webp'
       },
       {
-        id: 3,
+        id: 'FCCpy',
         name: 'Frango Com Catupiry',
         description: 'Frango Com Catupiry',
         price: 7.0,
         img: './images/pastel.webp'
       },
       {
-        id: 4,
+        id: 'clbs',
         name: 'Calabresa',
         description: 'Calabresa',
         price: 7.0,
         img: './images/pastel.webp'
       },
       {
-        id: 5,
+        id: 'cnds',
         name: 'Carne De Sol',
         description: 'Carne De Sol E Queijo Mussarela',
         price: 8.0,
         img: './images/pastel.webp'
       },
       {
-        id: 6,
+        id: 'cfcp',
         name: 'Carne E Frango Com Catupiry',
         description: 'Carne E Frango Com Catupiry',
         price: 8.5,
         img: './images/pastel.webp'
       },
       {
-        id: 7,
+        id: 'fclbs',
         name: 'Frango Com Calabresa',
         description: 'Frango, Calabresa E Catupiry',
         price: 7.5,
         img: './images/pastel.webp'
       },
       {
-        id: 8,
+        id: 'cnclbs',
         name: 'Carne Com Calabresa',
         description: 'Carne, Calabresa E Catupiry',
         price: 7.5,
         img: './images/pastel.webp'
       },
       {
-        id: 9,
+        id: 'cclbsc',
         name: 'Carne, Calabresa E Catupiry',
         description: 'Carne, Frango, Calabresa E Catupiry',
         price: 9.0,
         img: './images/pastel.webp'
       },
       {
-        id: 10,
+        id: 'qeiijjo',
         name: '4-Queijo',
         description: 'Carne, Frango, Calabresa E Catupiry',
         price: 6.0,
         img: './images/pastel.webp'
       },
       {
-        id: 11,
+        id: 'stnj',
         name: 'Sertanejo',
         description: 'Carne De Sol, Qualho E Cebola',
         price: 9.0,
@@ -356,49 +356,49 @@ let cardapios = [
   {
     bebidas: [
       {
-        id: 1,
+        id: 'aguam',
         name: 'Água Mineral 500ml',
         price: 2.0,
         img: './images/Agua.jpg'
       },
 
       {
-        id: 2,
+        id: 'refrigerante',
         name: 'Refrigerante 250ml',
         price: 2.0,
         img: './images/refrigerate.png'
       },
 
       {
-        id: 3,
+        id: 'refrilata',
         name: 'Refrigerante Lata 350ml',
         price: 4.0,
         img: './images/refrigerate.png'
       },
 
       {
-        id: 4,
+        id: 'refrilitro',
         name: 'Refrigerante 1 Litro',
         price: 6.0,
         img: './images/RG1litro.jpg'
       },
 
       {
-        id: 5,
+        id: 'sucoagua',
         name: 'Suco na Água 400ml',
         price: 3.0,
         img: './images/sucoA.jpg'
       },
 
       {
-        id: 6,
+        id: 'sucoleite',
         name: 'Suco no Leite 400ml',
         price: 4.0,
         img: './images/leiteS.jfif'
       },
 
       {
-        id: 7,
+        id: 'vitaminacupuacu',
         name: 'Vitamina de Cupuaçu',
         price: 5.0,
         img: './images/suco-cupuacu.jpg'
