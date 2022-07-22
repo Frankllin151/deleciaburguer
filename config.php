@@ -3,18 +3,19 @@ require 'environment.php';
 if (ENVIRONMENT === 'development') {
 
   define("BASE_URL", "http://localhost/deleciaburguer/");
-  $config['dbname'] = 'mvc';
+  $config['dbname'] = 'deleciaburguer';
   $config['host'] = 'localhost';
   $config['dbuser'] = 'root';
   $config['dbpass'] = '';
 } else {
   define("BASE_URL", "www.meussite.com.br");
-  $config['dbname'] = 'mvc';
+  $config['dbname'] = 'deleciaburguer';
   $config['host'] = 'localhost';
   $config['dbuser'] = 'root';
   $config['dbpass'] = '';
 }
 global $db;
+
 try {
 
   $db = new PDO(

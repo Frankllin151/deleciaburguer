@@ -1,10 +1,10 @@
 <?php
 class   Anuncios extends Models
 {
-  public function getquantidade()
+  /* public function getquantidade()
   {
 
-    $sql = "SELECT COUNT(*) as c FROM anuncio";
+    $sql = "SELECT COUNT(*) as c FROM pizza";
     $sql = $this->db->query($sql);
     if ($sql->rowCount() > 0) {
       $sql = $sql->fetch();
@@ -12,5 +12,5 @@ class   Anuncios extends Models
     } else {
       return 0;
     }
-  }
+  }*/
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php echo BASE_URL;  ?>/assets/css/stylemain.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL;  ?>/assets/css/style.css">
   <title>Document</title>
   <style>
   </style>
@@ -24,12 +24,31 @@
       <p>Cardápio</p>
       <h1>Delícia Burguer</h1>
     </div>
-    <div class="pizza">
-      <h1>Pizza</h1>
+    <div class="produtoitem">
+      <h1 class="titleitems">Pizza</h1>
       <div class="pizzaItem">
+        <?php echo $nome; ?>
         <div class="namepizza">nome da pizza</div>
+        <div class="photo">
+          <img src="" alt="">
+        </div>
         <div class="descriçaopizza">descriçao</div>
         <div class="preço"> preço da pizza</div>
+      </div>
+
+    </div>
+
+  </section>
+  <section id="sectionlanhces">
+    <div class="produtoitem">
+      <h1 class="titleitems">SanduichesX</h1>
+      <div class="sanduichesItem">
+        <div class="namesand">nome da pizza</div>
+        <div class="descriçaosnd">descriçao</div>
+        <div class="photo-snd">
+          <img src="" alt="">
+        </div>
+        <div class="preçosnd"> preço da pizza</div>
       </div>
     </div>
   </section>
