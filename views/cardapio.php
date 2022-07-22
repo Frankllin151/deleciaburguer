@@ -26,30 +26,82 @@
     </div>
     <div class="produtoitem">
       <h1 class="titleitems">Pizza</h1>
-      <div class="pizzaItem">
-        <?php echo $nome; ?>
-        <div class="namepizza">nome da pizza</div>
-        <div class="photo">
-          <img src="" alt="">
-        </div>
-        <div class="descriçaopizza">descriçao</div>
-        <div class="preço"> preço da pizza</div>
-      </div>
+      <?php foreach ($lista as $item) : ?>
+        <div class="pizzaItem">
 
+          <div class="namepizza"><?php echo $item['nome']; ?></div>
+          <div class="photo">
+            <img src="" alt="">
+          </div>
+          <div class="descriçaopizza"><?php echo $item['descricao']; ?></div>
+          <div class="preço"> preço da pizza</div>
+
+        </div>
+      <?php endforeach; ?>
     </div>
 
   </section>
   <section id="sectionlanhces">
     <div class="produtoitem">
-      <h1 class="titleitems">SanduichesX</h1>
-      <div class="sanduichesItem">
-        <div class="namesand">nome da pizza</div>
-        <div class="descriçaosnd">descriçao</div>
-        <div class="photo-snd">
-          <img src="" alt="">
+      <h1 class="titleitems">Sanduiches</h1>
+      <?php foreach ($Sandlista as $item) : ?>
+        <div class="sanduichesItem">
+          <div class="namesand"><?php echo $item['nome']; ?></div>
+          <div class="descriçaosnd"><?php echo $item['descricao']; ?></div>
+          <div class="photo-snd">
+            <img src="" alt="">
+          </div>
+          <div class="preçosnd"> preço da pizza</div>
         </div>
-        <div class="preçosnd"> preço da pizza</div>
-      </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+
+  <section id="sectionlanhces">
+    <div class="produtoitem">
+      <h1 class="titleitems">Patéis</h1>
+      <?php foreach ($Pateislista as $item) : ?>
+        <div class="sanduichesItem">
+          <div class="namesand"><?php echo $item['nome']; ?></div>
+          <div class="descriçaosnd"><?php echo $item['descricao']; ?></div>
+          <div class="photo-snd">
+            <img src="" alt="">
+          </div>
+          <div class="preçosnd"> preço da pizza</div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+
+  <section id="sectionlanhces">
+    <div class="produtoitem">
+      <h1 class="titleitems">Cachorro Quente</h1>
+      <?php foreach ($CachoroQT as $item) : ?>
+        <div class="sanduichesItem">
+          <div class="namesand"><?php echo $item['nome']; ?></div>
+          <div class="descriçaosnd"><?php echo $item['descricao']; ?></div>
+          <div class="photo-snd">
+            <img src="" alt="">
+          </div>
+          <div class="preçosnd"> preço da pizza</div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+
+  <section id="sectionlanhces">
+    <div class="produtoitem">
+      <h1 class="titleitems">Bebidas</h1>
+      <?php foreach ($Bebidas as $item) : ?>
+        <div class="sanduichesItem">
+          <div class="namesand"><?php echo $item['nome']; ?></div>
+
+          <div class="photo-snd">
+            <img src="" alt="">
+          </div>
+          <div class="preçosnd"> preço da pizza</div>
+        </div>
+      <?php endforeach; ?>
     </div>
   </section>
 </body>

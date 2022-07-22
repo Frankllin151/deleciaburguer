@@ -5,14 +5,15 @@ class Cardapiocontroller extends controller
 {
   public function index()
   {
+    $dados = array();
+    // get class 
     $cardapiomodal = new CardapioDsql;
-    $dados = array(
-      'id' => 'fef',
-      'nome' => $cardapiomodal->findAll(),
-      'descricao' => 'efff',
-      'cfc'
-      => '333'
-    );
+    // array to variables 
+    $dados['lista'] = $cardapiomodal->findAll();
+    $dados['Sandlista'] = $cardapiomodal->GetTablesand();
+    $dados['Pateislista'] = $cardapiomodal->GetPateis();
+    $dados['CachoroQT'] = $cardapiomodal->GetCachQuente();
+    $dados['Bebidas'] = $cardapiomodal->GetBebidas();
     $this->LoadTemplate('cardapio', $dados);
   }
 }

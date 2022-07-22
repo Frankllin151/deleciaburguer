@@ -262,7 +262,7 @@ font-size: 86px;
   font-size: 40px;
   margin-left: 30%;
 }
-.pizzaItem{
+.pizzaItem , .sanduichesItem{
   margin: 10px;
   width: 400px;
   height: 290px;

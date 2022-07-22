@@ -1,20 +1,54 @@
 <?php
-require_once './models/cardapiodao.php';
-class CardapioDsql extends Models implements Cardapiodao
+
+class CardapioDsql extends Models
 {
   public function findAll()
   {
-    $array = [];
-    $sql = $this->db->query('SELECT * FROM pizza ');
+    $array = array();
+    $sql = 'SELECT * FROM pizza ';
+    $sql = $this->db->query($sql);
     if ($sql->rowCount() > 0) {
-      $data = $sql->fetchAll();
-      foreach ($data as $item) {
-        $u = new Cardapio();
-
-        $u->setNome($item['nome']);
-        $u->setdescricao($item['descricao']);
-        $array = $u;
-      }
+      $array = $sql->fetchAll();
+    }
+    return $array;
+  }
+  public function GetTablesand()
+  {
+    $array = array();
+    $sql = 'SELECT * FROM sanduiches ';
+    $sql = $this->db->query($sql);
+    if ($sql->rowCount() > 0) {
+      $array = $sql->fetchAll();
+    }
+    return $array;
+  }
+  public function GetPateis()
+  {
+    $array = array();
+    $sql = 'SELECT * FROM pateis ';
+    $sql = $this->db->query($sql);
+    if ($sql->rowCount() > 0) {
+      $array = $sql->fetchAll();
+    }
+    return $array;
+  }
+  public function GetCachQuente()
+  {
+    $array = array();
+    $sql = 'SELECT * FROM cachorroquente ';
+    $sql = $this->db->query($sql);
+    if ($sql->rowCount() > 0) {
+      $array = $sql->fetchAll();
+    }
+    return $array;
+  }
+  public function GetBebidas()
+  {
+    $array = array();
+    $sql = 'SELECT * FROM bebidas ';
+    $sql = $this->db->query($sql);
+    if ($sql->rowCount() > 0) {
+      $array = $sql->fetchAll();
     }
     return $array;
   }
